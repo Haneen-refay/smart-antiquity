@@ -4,10 +4,8 @@ from PIL import Image
 
 # 1. Setup Gemini API
 # ⚠️ Make sure to put your real API Key here between the quotes ""
-API_KEY =" AIzaSyBJtHgP-QsfPs-NNKdpQZwCEqY9c6RcHlI"
-
+API_KEY = st.secrets["GEMINI_API_KEY"]
 client = genai.Client(api_key=API_KEY)
-
 # 2. Page Configuration
 st.set_page_config(page_title="Antiquity Explorer", page_icon="🏛️", layout="centered")
 
